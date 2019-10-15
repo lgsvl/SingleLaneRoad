@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ShalunWhiteSolidFiveStopLine
+  m_Name: SingleLaneRoadMaterial
   m_Shader: {fileID: -6465566751694194690, guid: 681b350c4802ac44abc0e139720fcd6f,
     type: 3}
   m_ShaderKeywords: _NORMALMAP_TANGENT_SPACE
@@ -26,6 +26,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_7510551D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_8E1261E7:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -135,6 +139,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_18B47B70: 0
     - Vector1_1C1D4CFA: 0
     - Vector1_8D5F934C: 0
     - Vector1_98E15DA: 0
