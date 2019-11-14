@@ -24,12 +24,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806643033311409349}
-  m_LocalRotation: {x: -0, y: 0.99999994, z: -0, w: 0.000313447}
-  m_LocalPosition: {x: -1.8, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.000549628, z: -0, w: 0.9999999}
+  m_LocalPosition: {x: 1.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3566300577269717252}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &806643033311409351
 MonoBehaviour:
@@ -44,20 +44,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayHandles: 0
-  displayLane: 0
-  displayLaneWidth: 3.7
   mapLocalPositions:
   - {x: 0, y: 0, z: -125.5}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 125.5}
-  laneTurn: 1
-  leftLineBoundry: {fileID: 0}
-  rightLineBoundry: {fileID: 0}
+  displayLane: 0
+  needSelfReverseLane: 0
+  isSelfReverseLane: 0
+  otherSelfReverseLaneId: 
+  displayLaneWidth: 3.7
+  leftLineBoundry: {fileID: 5236214082420972770}
+  rightLineBoundry: {fileID: 806643033432552791}
   stopLine: {fileID: 0}
   yieldToLanes: []
   laneTurnType: 1
-  leftBoundType: 5
-  rightBoundType: 4
   speedLimit: 11.176
 --- !u!1 &806643033432552789
 GameObject:
@@ -83,11 +83,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806643033432552789}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00018210753}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: 0.00007976172, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5077867598655759120}
+  m_Father: {fileID: 3566300577269717252}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &806643033432552791
@@ -107,12 +107,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -125.5}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 125.5}
-  signals: []
-  lineType: 5
+  lineType: 0
+  isVirtual: 0
   isStopSign: 0
   stopSign: {fileID: 0}
   currentState: 2
---- !u!1 &806643034267439632
+--- !u!1 &2431401776165148561
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,8 +120,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 806643034267439633}
-  - component: {fileID: 806643034267439634}
+  - component: {fileID: 2431401776165148562}
+  - component: {fileID: 2431401776165148563}
   m_Layer: 0
   m_Name: MapLineBoundry
   m_TagString: Untagged
@@ -129,27 +129,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &806643034267439633
+--- !u!4 &2431401776165148562
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806643034267439632}
-  m_LocalRotation: {x: -0, y: 0.00007976172, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6, y: 0, z: 0}
+  m_GameObject: {fileID: 2431401776165148561}
+  m_LocalRotation: {x: -0, y: -0.000067676236, z: -0, w: 1}
+  m_LocalPosition: {x: -3.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5077867598655759120}
-  m_RootOrder: 1
+  m_Father: {fileID: 3566300577269717252}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &806643034267439634
+--- !u!114 &2431401776165148563
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806643034267439632}
+  m_GameObject: {fileID: 2431401776165148561}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 613f24b8a758814488caacc1ee3aabf8, type: 3}
@@ -160,12 +160,12 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -125.5}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 125.5}
-  signals: []
   lineType: 0
+  isVirtual: 0
   isStopSign: 0
   stopSign: {fileID: 0}
   currentState: 2
---- !u!1 &7072079058456687113
+--- !u!1 &5236214082306186608
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,8 +173,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7072079058456687112}
-  - component: {fileID: 7072079058456687115}
+  - component: {fileID: 5236214082306186611}
+  - component: {fileID: 5236214082306186610}
   m_Layer: 0
   m_Name: MapLane
   m_TagString: Untagged
@@ -182,49 +182,49 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7072079058456687112
+--- !u!4 &5236214082306186611
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7072079058456687113}
-  m_LocalRotation: {x: -0, y: 0.000549628, z: -0, w: 0.9999999}
-  m_LocalPosition: {x: 1.8, y: 0, z: 0}
+  m_GameObject: {fileID: 5236214082306186608}
+  m_LocalRotation: {x: -0, y: 0.99999994, z: -0, w: 0.000313447}
+  m_LocalPosition: {x: -1.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3566300577269717252}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7072079058456687115
+--- !u!114 &5236214082306186610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7072079058456687113}
+  m_GameObject: {fileID: 5236214082306186608}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9831043d1d406904f94c37f46236d5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   displayHandles: 0
-  displayLane: 0
-  displayLaneWidth: 3.7
   mapLocalPositions:
   - {x: 0, y: 0, z: -125.5}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 125.5}
-  laneTurn: 1
-  leftLineBoundry: {fileID: 0}
-  rightLineBoundry: {fileID: 0}
+  displayLane: 0
+  needSelfReverseLane: 0
+  isSelfReverseLane: 0
+  otherSelfReverseLaneId: 
+  displayLaneWidth: 3.7
+  leftLineBoundry: {fileID: 5236214082420972770}
+  rightLineBoundry: {fileID: 2431401776165148563}
   stopLine: {fileID: 0}
   yieldToLanes: []
   laneTurnType: 1
-  leftBoundType: 5
-  rightBoundType: 4
   speedLimit: 11.176
---- !u!1 &7072079058682527268
+--- !u!1 &5236214082420972768
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -232,8 +232,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7072079058682527271}
-  - component: {fileID: 7072079058682527270}
+  - component: {fileID: 5236214082420972771}
+  - component: {fileID: 5236214082420972770}
   m_Layer: 0
   m_Name: MapLineBoundry
   m_TagString: Untagged
@@ -241,27 +241,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7072079058682527271
+--- !u!4 &5236214082420972771
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7072079058682527268}
-  m_LocalRotation: {x: -0, y: -0.000067676236, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6, y: 0, z: 0}
+  m_GameObject: {fileID: 5236214082420972768}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00018210753}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5077867598655759120}
-  m_RootOrder: 0
+  m_Father: {fileID: 3566300577269717252}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7072079058682527270
+--- !u!114 &5236214082420972770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7072079058682527268}
+  m_GameObject: {fileID: 5236214082420972768}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 613f24b8a758814488caacc1ee3aabf8, type: 3}
@@ -272,8 +272,8 @@ MonoBehaviour:
   - {x: 0, y: 0, z: -125.5}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 125.5}
-  signals: []
-  lineType: 0
+  lineType: 5
+  isVirtual: 0
   isStopSign: 0
   stopSign: {fileID: 0}
   currentState: 2
@@ -381,9 +381,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7072079058682527271}
-  - {fileID: 806643034267439633}
-  - {fileID: 806643033432552790}
   - {fileID: 3566300577269717252}
   m_Father: {fileID: 7072079058837459780}
   m_RootOrder: 0
@@ -416,10 +413,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7072079058456687112}
   - {fileID: 806643033311409350}
+  - {fileID: 5236214082306186611}
+  - {fileID: 806643033432552790}
+  - {fileID: 5236214082420972771}
+  - {fileID: 2431401776165148562}
   m_Father: {fileID: 5077867598655759120}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2866385964645854555
 MonoBehaviour:
