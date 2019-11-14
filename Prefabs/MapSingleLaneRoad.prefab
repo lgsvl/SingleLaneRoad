@@ -45,9 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayHandles: 0
   mapLocalPositions:
-  - {x: 0, y: 0, z: -125.5}
+  - {x: 0, y: 0, z: -122.5}
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 125.5}
+  - {x: 0, y: 0, z: 122.5}
   displayLane: 0
   needSelfReverseLane: 0
   isSelfReverseLane: 0
@@ -210,9 +210,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayHandles: 0
   mapLocalPositions:
-  - {x: 0, y: 0, z: -125.5}
+  - {x: 0, y: 0, z: -122.5}
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 125.5}
+  - {x: 0, y: 0, z: 122.5}
   displayLane: 0
   needSelfReverseLane: 0
   isSelfReverseLane: 0
