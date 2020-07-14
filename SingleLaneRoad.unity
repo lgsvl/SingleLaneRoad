@@ -374,7 +374,7 @@ PrefabInstance:
     - target: {fileID: 4345742850645809408, guid: 05e0999041aa6aa4b98204cc00a5677d,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 91
       objectReference: {fileID: 0}
     - target: {fileID: 4345742850645809408, guid: 05e0999041aa6aa4b98204cc00a5677d,
         type: 3}
@@ -385,6 +385,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SingleLaneRoad
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607804527304482309, guid: 05e0999041aa6aa4b98204cc00a5677d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 91
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05e0999041aa6aa4b98204cc00a5677d, type: 3}
