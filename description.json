@@ -2,7 +2,7 @@
   "name": "SingleLaneRoad",
   "accessType": "public",
   "description": "This map is a simple two-way single-lane road used for basic test cases. This is a convenient map for running basic scenarios for your autonomous driving system modules.",
-  "licenseName": "LG Simulator",
+  "licenseName": "LG Content",
   "copyright": "LG Electronics Inc.",
   "tags": [
     {
