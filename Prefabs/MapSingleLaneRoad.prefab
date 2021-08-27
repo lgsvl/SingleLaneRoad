@@ -43,11 +43,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9831043d1d406904f94c37f46236d5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayHandles: 0
+  DisplayHandles: 0
   mapLocalPositions:
   - {x: 0, y: 0, z: -122.5}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 122.5}
+  _id: lane_0
+  DenySpawn: 0
   displayLane: 0
   needSelfReverseLane: 0
   isSelfReverseLane: 0
@@ -102,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613f24b8a758814488caacc1ee3aabf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayHandles: 0
+  DisplayHandles: 0
   mapLocalPositions:
   - {x: 0, y: 0, z: -125.5}
   - {x: 0, y: 0, z: 0}
@@ -155,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613f24b8a758814488caacc1ee3aabf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayHandles: 0
+  DisplayHandles: 0
   mapLocalPositions:
   - {x: 0, y: 0, z: -125.5}
   - {x: 0, y: 0, z: 0}
@@ -208,11 +210,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9831043d1d406904f94c37f46236d5e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayHandles: 0
+  DisplayHandles: 0
   mapLocalPositions:
   - {x: 0, y: 0, z: -122.5}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 122.5}
+  _id: lane_1
+  DenySpawn: 0
   displayLane: 0
   needSelfReverseLane: 0
   isSelfReverseLane: 0
@@ -267,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 613f24b8a758814488caacc1ee3aabf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayHandles: 0
+  DisplayHandles: 0
   mapLocalPositions:
   - {x: 0, y: 0, z: -125.5}
   - {x: 0, y: 0, z: 0}
@@ -324,6 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trafficLanesHolder: {fileID: 5077867598655759120}
   intersectionsHolder: {fileID: 7111545366906960331}
+  MapWaypointSize: 0.5
 --- !u!1 &7111545366906960330
 GameObject:
   m_ObjectHideFlags: 0
